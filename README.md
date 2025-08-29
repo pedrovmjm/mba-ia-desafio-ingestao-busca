@@ -124,15 +124,15 @@ Encerrando chat.
 ## ⚙️ Requisitos do Projeto
 
 ### 📄 Ingestão do PDF
-- **Chunking**: PDF dividido em pedaços de 1000 caracteres com sobreposição de 150
-- **Embeddings**: Cada chunk convertido em vetor usando `models/embedding-001` do Gemini
-- **Armazenamento**: Vetores salvos no PostgreSQL com extensão pgVector
+- **Chunking**: PDF dividido em pedaços de 1000 caracteres com sobreposição de 150 ✅
+- **Embeddings**: Cada chunk convertido em vetor usando `models/embedding-001` do Gemini ✅
+- **Armazenamento**: Vetores salvos no PostgreSQL com extensão pgVector ✅
 
 ### 🔍 Busca Semântica
-- **Interface CLI**: Chat interativo no terminal
-- **Busca vetorial**: Encontra os 10 chunks mais relevantes (k=10)
-- **Geração de resposta**: LLM Gemini processa contexto e responde
-- **Validação de contexto**: Responde apenas com base no PDF ingerido
+- **Interface CLI**: Chat interativo no terminal ✅
+- **Busca vetorial**: Encontra os 10 chunks mais relevantes (k=10) ✅
+- **Geração de resposta**: LLM Gemini processa contexto e responde ✅
+- **Validação de contexto**: Responde apenas com base no PDF ingerido ✅
 
 
 ## 🔧 Detalhes Técnicos
@@ -179,6 +179,8 @@ RESPONDA A "PERGUNTA DO USUÁRIO"
 
 ## 🎁 Bônus: Chat com Histórico Conversacional
 
+> **Observação**: O chat com histórico conversacional foi implementado, entretanto, o prompt deve que ser alterado para adequar o comportamento do modelo, portanto, não foi utilizado o prompt fornecido anteriormente.
+
 ### 💬 Funcionalidade Extra
 Além do chat básico, implementei um **chat com memória conversacional**:
 
@@ -194,6 +196,7 @@ python3 src/chat_with_history.py
   - `limpar` - Limpar memória da sessão
   - `sair` - Encerrar chat
 - **Interface aprimorada**: Emojis e formatação visual
+
 
 ### 🔄 Exemplo de Uso Conversacional
 ```

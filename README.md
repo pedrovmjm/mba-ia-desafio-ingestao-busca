@@ -179,7 +179,7 @@ RESPONDA A "PERGUNTA DO USUÁRIO"
 
 ## 🎁 Bônus: Chat com Histórico Conversacional
 
-> **Observação**: O chat com histórico conversacional foi implementado, entretanto, o prompt deve que ser alterado para adequar o comportamento do modelo, portanto, não foi utilizado o prompt fornecido anteriormente.
+> **Observação**: O chat com histórico conversacional foi implementado, entretanto, o prompt teve que ser alterado para adequar o comportamento do modelo, portanto, não foi utilizado o prompt fornecido anteriormente.
 
 ### 💬 Funcionalidade Extra
 Além do chat básico, implementei um **chat com memória conversacional**:
